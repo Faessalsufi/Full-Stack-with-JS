@@ -1,0 +1,46 @@
+/* li.text-orange#bg-black {
+  background-color: #cbf8cb;
+  color: #0000ff;
+} */
+
+/* .text-orange,
+#bg-black,
+h2 {
+  color: #720000;
+  background-color: antiquewhite;
+}
+
+nav,
+li {
+  padding: 5px;
+} */
+
+nav ul li {
+  color: blueviolet;
+  background-color: #4f3636;
+}
+
+div > span {
+  color: #ffff00;
+  background-color: #fe8223;
+}
+
+h3 + p {
+  color: #fe8223;
+  background-color: #4f3636;
+}
+
+h3 ~ li {
+  color: #27fe23;
+  background-color: #201f1f;
+}
+
+/* a::before {
+  content: "🔗";
+  display: inline-block;
+} */
+
+a::after {
+  content: "🔗";
+  display: inline-block;
+}
