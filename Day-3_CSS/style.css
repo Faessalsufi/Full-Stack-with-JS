@@ -1,0 +1,89 @@
+body {
+  background-color: #656565;
+}
+.nav-link:hover::before {
+  content: "anything ";
+  display: inline;
+  height: 10px;
+  width: 10px;
+  border-radius: 10;
+}
+/* pseudo selectors are nothing but they enject an element before or after an the selected element*/
+
+.section-title:hover {
+  background-color: #0000ff84;
+  color: #ffffff;
+}
+
+.submit-button {
+  background-color: #008000;
+  border-radius: 5px;
+  padding: 2px 6px;
+  border: 1px solid rgb(254, 254, 254);
+  font-size: 12px;
+}
+.submit-button:hover {
+  background-color: #f0f8ff;
+  color: #008000;
+  border: 1px solid #008000;
+}
+
+.section-description:hover {
+  background-color: #ffffff;
+  color: #008000;
+}
+/* if visited */
+.nav-link:visited {
+  color: #ffffff;
+}
+/* if not visited */
+.nav-link:link {
+  color: #008000;
+  background-color: black;
+  border-radius: 5px;
+  padding: 2px 5px 5px 5px;
+  margin-top: 10px;
+}
+
+.input-field:focus {
+  background-color: green;
+  border: 3px solid rgb(255, 255, 255);
+}
+
+/* li:nth-child(even) {
+  color: #ffffff;
+} */
+
+li:first-child {
+  color: #00ffff;
+}
+li:last-child {
+  color: yellow;
+}
+/* margin is from outside */
+/* padding is from inside */
+/* top right bottom left */
+
+h1 {
+  border: solid 3px #434343;
+}
+.topic {
+  margin-top: 50px;
+  height: 50px;
+  width: 550px;
+}
+.topic:hover {
+  background-color: #ffffff;
+}
+
+li {
+  list-style-type: lower-roman;
+}
+
+.topic {
+  position: static;
+}
+/* the position will be fixed and move in we scroll */
+form {
+  position: fixed;
+}
