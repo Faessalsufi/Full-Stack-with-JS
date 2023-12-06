@@ -1,0 +1,67 @@
+* {
+  margin: 9;
+  padding: 9;
+}
+body {
+  background-color: rgb(136, 136, 136);
+}
+.basketballJourney {
+  border: 3px solid green;
+  /* border-width: 3px;
+  border-style: solid;
+  border-color: green; */
+}
+
+/* Margin is from outside  */
+/* Padding is from inside */
+
+.basketballJourney {
+  padding: 24px;
+  margin: 10px 10px 10px 10px;
+  /* top right bottom left */
+  height: 120px;
+  width: 500px;
+  background-color: yellowgreen;
+  text-align: center;
+  text-decoration: underline;
+}
+
+/* direct child selection */
+/* section > p {
+  color: aquamarine;
+}
+section > h2 {
+  color: burlywood;
+} */
+
+/* adjacent siblings */
+/* h2 + p {
+  color: blue;
+} */
+
+/* pseudo selectors */
+/* ::before ::after */
+
+footer:hover::before {
+  content: "This is a footer";
+  display: inline-block;
+  color: blue;
+}
+
+.google:hover {
+  color: yellow;
+  background-color: green;
+  padding: 3px;
+  border-radius: 6px;
+}
+
+.google:visited {
+  color: green;
+  background-color: yellow;
+}
+
+#name:focus,
+#email:focus {
+  background-color: green;
+  color: yellow;
+}
