@@ -1,0 +1,30 @@
+* {
+  height: 1000px;
+  margin: 30px;
+}
+.pos {
+  border: 1px solid grey;
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  border-radius: 6px;
+}
+/* #three {
+  position: relative;
+  top: 60px;
+  right: -24px;
+}
+
+
+/* #two {
+  position: absolute;
+} */
+#one {
+  position: fixed;
+}
+
+#four {
+  position: sticky;
+  top: 10px;
+}

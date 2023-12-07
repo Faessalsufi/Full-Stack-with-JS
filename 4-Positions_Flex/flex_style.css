@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  height: 600px;
+  border: 3px solid blue;
+  flex-direction: row;
+  /* justify-content: center;
+  align-items: center; */
+  flex-wrap: wrap;
+}
+.item {
+  border: 3px solid brown;
+  background-color: yellow;
+  height: 60px;
+  width: 60px;
+  margin: 6px;
+}
+#flex {
+  /* flex-grow: 1; */
+  align-self: center;
+}
