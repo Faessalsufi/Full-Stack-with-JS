@@ -1,0 +1,112 @@
+body {
+  background-color: #b1b1b1;
+}
+ul {
+  display: flex;
+}
+@media (max-width: 500px) {
+  .navbar {
+    display: flex;
+    background-color: #001f3f;
+    color: #ff73c0;
+    justify-content: center;
+    flex-direction: column;
+  }
+  a {
+    color: #ff73c0;
+  }
+  .webhead {
+    display: flex;
+    color: #5e2ca5;
+    justify-content: center;
+  }
+  h2 {
+    color: #5e2ca5;
+  }
+  p {
+    color: #093e72;
+  }
+  .ftr {
+    display: flex;
+    justify-content: center;
+    background-color: #001f3f;
+  }
+  ul > li {
+    margin-right: 25px;
+  }
+  .ftr-text {
+    color: #ff73c0;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 768px) {
+  .webhead {
+    display: flex;
+    color: #5e2ca5;
+    justify-content: start;
+  }
+  .navbar {
+    display: flex;
+    background-color: #001f3f;
+    color: #ff73c0;
+    justify-content: start;
+  }
+  a {
+    color: #ff73c0;
+  }
+  ul > li {
+    margin-right: 25px;
+  }
+  h2 {
+    color: #5e2ca5;
+    display: flex;
+    justify-content: center;
+  }
+  p {
+    color: #093e72;
+    display: flex;
+    justify-content: center;
+  }
+  .ftr {
+    display: flex;
+    justify-content: center;
+    background-color: #001f3f;
+  }
+  .ftr-text {
+    color: #ff73c0;
+  }
+}
+
+@media (max-width: 1700px) {
+  .navbar {
+    display: flex;
+    background-color: #001f3f;
+    color: #ff73c0;
+    justify-content: center;
+  }
+  a {
+    color: #ff73c0;
+  }
+  .webhead {
+    display: flex;
+    color: #5e2ca5;
+    justify-content: center;
+  }
+  h2 {
+    color: #5e2ca5;
+  }
+  p {
+    color: #093e72;
+  }
+  .ftr {
+    display: flex;
+    justify-content: center;
+    background-color: #001f3f;
+  }
+  ul > li {
+    margin-right: 25px;
+  }
+  .ftr-text {
+    color: #ff73c0;
+  }
+}
