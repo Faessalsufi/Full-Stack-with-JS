@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 60px 0px 0px 55px;
+  font-weight: 600;
+  font-size: 18px;
+}
+.navbar-container > div > img {
+  height: 42px;
+  margin-left: 90px;
+  margin-top: 15px;
+}
+.list {
+  display: flex;
+
+  color: #b9b9b9;
+  list-style-type: none;
+}
+.grow-list {
+  margin-right: 400px;
+  margin-top: 20px;
+}
+.list-item {
+  margin-right: 24px;
+}
+.list-item:hover {
+  color: #000000;
+}
+.button-group {
+  margin-right: 18px;
+}
+.nav-button {
+  background-color: #5955b1;
+  color: #ffffff;
+  border-radius: 15px;
+  padding: 13px 24px;
+  font-size: 16px;
+  margin-right: 144px;
+  margin-top: 12px;
+}
+
+.banner-container > div:first-child {
+  margin-left: -9px;
+  margin-top: 81px;
+}
+
+.heading-text {
+  color: #3c2f5f;
+  font-size: 66px;
+  margin-top: 50px;
+  width: 423px;
+  line-height: 1.2;
+}
+.heading-text > span {
+  color: #5b57b2;
+}
+
+.description {
+  color: #848484;
+  width: 408px;
+  margin-top: 24px;
+  margin-bottom: 15px;
+}
+
+div > div > img {
+  height: 500px;
+  margin-top: 24px;
+}
+.banner-container {
+  display: flex;
+  justify-content: space-evenly;
+}
