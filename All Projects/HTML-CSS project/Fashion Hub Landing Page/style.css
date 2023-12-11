@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Orbitron;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 60px;
+}
+/* Logo */
+.navbar-container:nth-child(1) > div > img {
+  height: 45px;
+}
+.list {
+  display: flex;
+  list-style-type: none;
+}
+.list-item {
+  margin: 13px 51px 0px 0px;
+  font-weight: 900;
+  cursor: pointer;
+}
+.search-icon svg {
+  position: absolute;
+  right: 300px;
+  top: 63px;
+  width: 27px;
+}
+.nav-button {
+  font-size: 21px;
+  background-color: #fff;
+  color: #000000;
+  border: 2.4px solid black;
+  border-radius: 12px;
+  padding: 6px 39px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.nav-button:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+/* Hero section */
+.square {
+  margin: 221px;
+  position: absolute;
+  top: 153px;
+  height: 400px;
+}
+.hero-container {
+  display: flex;
+}
+.hero-heading {
+  font-size: 57px;
+}
+
+.hero-description {
+  color: #555;
+  width: 711px;
+  text-align: center;
+  margin-top: 66px;
+}
+.button-email {
+  background-color: #ffffff;
+  color: #555;
+  border: 2px solid black;
+  border-radius: 6px;
+  padding: 6px 18px;
+  font-size: 24px;
+  margin-right: 24px;
+  cursor: pointer;
+}
+.button-email:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+.button-join {
+  color: #ffffff;
+  background-color: #000000;
+  border: 2px solid black;
+  border-radius: 6px;
+  padding: 6px 18px;
+  font-size: 24px;
+  cursor: pointer;
+}
+.button-join:hover {
+  background-color: #ffffff;
+  color: #555;
+}
+
+.globe + div > img {
+  height: 531px;
+  z-index: 1;
+  position: relative;
+  top: 93px;
+  left: 121px;
+}
+.star {
+  position: absolute;
+  right: 118px;
+  display: flex;
+  justify-content: flex-end;
+  top: 154px;
+}
+.star > img {
+  height: 60px;
+}
+.globe {
+  position: absolute;
+  left: 744px;
+  top: 130px;
+}
+.globe > img {
+  height: 60px;
+}
+.hero-container-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-left: 207px;
+  margin-top: 109px;
+}
+.contact-heading {
+  text-align: center;
+  margin-bottom: 12px;
+  color: #555;
+  margin-top: 120px;
+}
+
+.hero-container > span:nth-of-type(3) img {
+  top: 408px;
+  position: absolute;
+  right: 667px;
+  height: 42px;
+}
+.hero-description + div {
+  position: relative;
+  top: 51px;
+}

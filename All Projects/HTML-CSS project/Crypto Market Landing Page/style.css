@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)),
+    url("./assets/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Styling for the navigation bar */
+.navbar {
+  display: flex;
+  background-color: #000000;
+  color: #ffffff;
+  justify-content: space-between;
+  padding: 12px;
+}
+.logo {
+  height: 36px;
+}
+.line {
+  background-color: white;
+  height: 51px;
+  width: 1px;
+}
+
+.list {
+  display: flex;
+  list-style-type: none;
+}
+.list-item {
+  margin-right: 42px;
+  cursor: pointer;
+}
+
+.grow-list {
+  display: flex;
+  align-items: center;
+  width: 900px;
+  font-size: 18px;
+}
+
+/* both buttons styling */
+.button-small,
+.button-large {
+  background-color: #ba0cc5;
+  border-radius: 6px;
+  padding: 15px 30px;
+  border: 0px;
+  color: white;
+  margin: 8px 90px 0px 0px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Hero section styling */
+nav > div {
+  display: flex;
+  align-items: center;
+  margin-left: 60px;
+}
+
+.hero-heading {
+  color: #ffffff;
+  font-size: 78px;
+  width: 657px;
+}
+.hero-description {
+  color: #ffffff;
+  font-size: 33px;
+}
+
+.hero {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  height: 100vh;
+}
+.button-large {
+  font-size: 24px;
+  padding: 18px 33px;
+  font-weight: 500;
+  margin-top: 30px;
+}
