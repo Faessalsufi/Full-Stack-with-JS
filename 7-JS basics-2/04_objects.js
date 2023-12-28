@@ -61,4 +61,37 @@ objArr = Object.keys(facebookUser);
 
 // console.log(Object.entries(facebookUser));
 
-console.log(facebookUser.hasOwnProperty("isLoggedIn"));
+// console.log(facebookUser.hasOwnProperty("isLoggedIn"));
+
+const course = {
+  courseName: "Javascript",
+  price: "369",
+  courseMentor: "Faessal Sufi",
+};
+
+// console.log(course.courseMentor);
+
+// destructure object
+
+const { courseMentor: CM } = course;
+// CM is like As
+
+console.log(CM);
+
+// JSON
+
+// {
+//   "courseName": "Javascript",
+//   "price": "369",
+//   "courseMentor": "Faessal Sufi",
+// }
+
+// sometimes we get api in array format also
+
+[{}, {}, {}];
+
+const { id } = facebookUser;
+
+console.log(id);
+
+// const { objElement : shortForm } = objName;
