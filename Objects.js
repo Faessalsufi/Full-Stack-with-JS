@@ -1,4 +1,4 @@
-// Objects
+// Objects for practice
 const person = {
   name: "John Doe",
   age: 25,
@@ -112,3 +112,5 @@ const artist = {
   artMovement: "Post-Impressionism",
   diedYear: 1890,
 };
+
+
