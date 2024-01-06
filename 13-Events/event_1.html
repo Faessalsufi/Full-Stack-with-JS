@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="background-color: #212121;">
+    <h2>Amazing Images</h2>
+    <ul id="images">
+        <li><img height="150px"
+                src="https://w0.peakpx.com/wallpaper/547/513/HD-wallpaper-square-top-mountain-and-the-green-river-wyoming-mountain-river-water-sky.jpg"
+                id="nature"></li>
+        <li><img height="150px" src="https://w0.peakpx.com/wallpaper/0/363/HD-wallpaper-windows-11-microsoft.jpg"
+                id="windows"></li>
+        <li><img height="150px"
+                src="https://w0.peakpx.com/wallpaper/735/874/HD-wallpaper-bugatti-chiron-and-private-jet-bugatti-chiron-bugatti-2018-cars-artist-behance.jpg"
+                id="car"></li>
+        <li><img height="150px"
+                src="https://w0.peakpx.com/wallpaper/709/820/HD-wallpaper-clash-of-clans-2016-games-barbarians.jpg"
+                id="coc"></li>
+        <li><img height="150px"
+                src="https://w0.peakpx.com/wallpaper/570/648/HD-wallpaper-flamingo-beach-sunset-clouds-sky-animal.jpg"
+                id="bird"></li>
+        <li><img id="sky" height="150px"
+                src="https://w0.peakpx.com/wallpaper/871/469/HD-wallpaper-anime-landscape-sunset-clouds-sky-night-anime.jpg">
+        </li>
+        <li><a id="google" href="www.google.com">Google</a></li>
+    </ul>
+</body>
+<script>
+
+    // document.getElementById("bird").onclik = function () {
+    //     alert("sky")
+    // }
+
+    // type, timestamp, defaultprevented.
+    // target, toElement, srcElement, currentTarget
+    // clientX, clientY, screenX, screenY
+    // altKey, ctrlKey, shiftKey, keyCode
+
+
+    //! ================================================
+
+    // document.getElementById("images").addEventListener('click', (e) => {
+
+    //     console.log("clicked inside image");
+
+    // }, false)
+
+    // document.getElementById("nature").addEventListener('click', (e) => {
+
+    //     console.log("clicked nature");
+    //     e.stopPropagation()
+    // }, false)
+
+    // // attachEvent()
+    // // jquery - on
+
+
+    // document.getElementById('google').addEventListener('click', function (e) {
+    //     e.preventDefault();
+    //     console.log("google clicked");
+    //     e.stopPropagation()
+    // }, false)
+
+
+    document.querySelector('#images').addEventListener('click', function (e) {
+        console.log(e.target.parentNode);
+        if (e.target.tagName === "IMG") {
+            console.log(e.target.id);
+            let removeIt = e.target.parentNode
+            removeIt.remove()
+        }
+
+    })
+
+    // removeIt.parentNode.removeChild(removeIt)
+
+
+</script>
+
+</html>
