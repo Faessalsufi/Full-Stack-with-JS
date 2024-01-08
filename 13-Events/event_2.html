@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>This is Something </h1>
+    <button id="btn">Stop</button>
+</body>
+<script>
+    // Will execute only once after the time
+    const sayName = () => {
+        console.log("Sufi")
+    }
+    // setTimeout(sayName, 6000)
+
+    const changeTitle = () => {
+        document.querySelector("h1").innerHTML = "We changed it"
+    }
+
+    const changingTitle = setTimeout(changeTitle, 3000)
+    document.querySelector("#btn").addEventListener('click', function () {
+        clearTimeout(changingTitle)
+    })
+
+</script>
+
+</html>

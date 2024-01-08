@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Api</title>
+    <style>
+        .profile {
+            display: flex;
+        }
+
+        img {
+            height: 60px;
+            border-radius: 50px;
+        }
+
+        .card {
+            display: flex;
+            align-items: center;
+        }
+
+        .profile-name {
+            height: 9px;
+        }
+    </style>
+</head>
+
+<body style="background-color: #767676;">
+    <div class="container">
+        <div class="card">
+            <div class="profile">
+                <img class="profile-image" alt="">
+            </div>
+            <div>
+                <h2 class="profile-name"></h2>
+                <h2 class="followers"></h2>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    const requestUrl = "https://api.github.com/users/hiteshchoudhary"
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET', requestUrl)
+    xhr.onreadystatechange = function () {
+        console.log(xhr.readyState);
+        data = JSON.parse(this.responseText)
+        if (xhr.readyState === 4) {
+            console.log(data.followers);
+            console.log(data.avatar_url);
+        }
+
+        // document.querySelector('.card').innerHTML = `<img src='${data.avatar_url}'>`
+
+        document.querySelector('.profile-image').setAttribute("src", `${data.avatar_url}`)
+        document.querySelector(".profile-name").innerHTML = `Name: ${data.name}`
+        document.querySelector(".followers").innerHTML = `Followers: ${data.followers}`
+
+        // const followers = document.createTextNode(`${data.followers}`)
+
+        // document.querySelector(".card").appendChild(followers)
+    }
+    xhr.send() // actually call open
+
+
+
+</script>
+
+</html>
