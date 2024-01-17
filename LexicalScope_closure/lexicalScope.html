@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lexical Scope And Closure</title>
+</head>
+
+<body>
+    <button class="orange">orange</button>
+    <button class="green">green</button>
+</body>
+<script>
+
+    // function grandParent() {
+    //     let username = "Someone"
+    //     function parent() {
+
+    //         console.log('Father: ', username); //  can access because its inside
+    //         function child() {
+    //             console.log("Child: ", username);
+    //         }
+    //         child()
+    //     }
+    //     parent()
+    // }
+    // grandParent()
+    //! console.log(username); // Can't access this out of scope
+</script>
+<script>
+    // document.querySelector(".orange").onclick = function () {
+    //     document.body.style.backgroundColor = "orange"
+    // }
+    // document.querySelector(".green").onclick = function () {
+    //     document.body.style.backgroundColor = "green"
+    // }
+
+    function clickHandler(color) {
+        return function () {
+            document.body.style.backgroundColor = `${color}`
+        }
+    }
+
+    document.querySelector(".orange").onclick = clickHandler("orange")
+    document.querySelector(".green").onclick = clickHandler("green")
+</script>
+
+</html>
